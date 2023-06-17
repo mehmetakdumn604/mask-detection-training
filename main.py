@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 # Define directories
 data_dir = 'data'
 
-# Create a data generator
+#  Create a data generator
 datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2)
 
 train_generator = datagen.flow_from_directory(
